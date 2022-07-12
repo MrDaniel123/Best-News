@@ -20,6 +20,7 @@ const ArticleBig = ({ dataArticle }) => {
 			<ArticleSectionInformation
 				time={data.published_date}
 				editorialOffice={data.rights}
+				mediaLink={data.link}
 			/>
 		</Article>
 	);
@@ -29,8 +30,10 @@ const Article = styled.article`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	width: 320px;
-	/* height: 430px; */
+	min-width: 320px;
+	max-width: 440px;
+	width: 100%;
+	margin: 0 10px;
 
 	background: #ffffff;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -39,7 +42,8 @@ const Article = styled.article`
 `;
 
 const Image = styled.img`
-	width: 300px;
+	min-width: 300px;
+	width: 95%;
 	height: 150px;
 	margin-bottom: 12px;
 	margin-top: 10px;

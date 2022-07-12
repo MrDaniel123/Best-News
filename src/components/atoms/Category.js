@@ -34,6 +34,7 @@ const Circle = styled.div`
 
 const ButtonCategogry = styled.button`
 	border: none;
+	background-color: #fff;
 `;
 
 const CategoryNameIsNotChoice = styled.p`

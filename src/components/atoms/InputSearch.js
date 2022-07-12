@@ -9,8 +9,9 @@ const InputSearch = () => {
 };
 
 const Input = styled.input`
-	height: 21px;
-	width: 196px;
+	height: 28px;
+	/* min-width: 196px; */
+	width: 98%;
 	font-size: 12px;
 	color: #7c7c7c;
 	padding: 5px;
@@ -23,8 +24,8 @@ const BorderInput = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 25px;
-	width: 200px;
+	height: 32px;
+	width: 75%;
 	border-radius: 5px;
 
 	background-image: linear-gradient(

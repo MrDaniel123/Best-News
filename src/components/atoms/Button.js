@@ -5,8 +5,8 @@ const Button = () => {
 };
 
 const Btn = styled.button`
-	width: 50px;
-	height: 25px;
+	width: 60px;
+	height: 32px;
 	border: none;
 
 	background-color: #fff;

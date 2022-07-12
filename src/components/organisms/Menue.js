@@ -30,8 +30,10 @@ const Menue = props => {
 const MenuePopup = styled.div`
 	position: fixed;
 	top: 0;
-	right: -275px;
-	width: 275px;
+	right: -70%;
+	min-width: 275px;
+	max-width: 400px;
+	width: 70%;
 	height: 440px;
 	z-index: 2;
 
@@ -39,7 +41,7 @@ const MenuePopup = styled.div`
 	background-color: #fff;
 	transition: transform 0.3s ease-in-out;
 
-	transform: ${props => (props.isShow ? 'translateX(-275px)' : null)};
+	transform: ${props => (props.isShow ? 'translateX(-100%)' : null)};
 `;
 
 const BlurElement = styled.div`

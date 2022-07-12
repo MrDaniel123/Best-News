@@ -15,6 +15,7 @@ const ArticleMedium = props => {
 			<ArticleSectionInformation
 				time={props.data.published_date}
 				editorialOffice={props.data.rights}
+				mediaLink={props.data.link}
 			/>
 		</Article>
 	);
@@ -22,16 +23,20 @@ const ArticleMedium = props => {
 
 const Article = styled.article`
 	display: grid;
-	grid-template-columns: 100px 1fr;
-	grid-template-rows: 30px 70px 1fr 20px;
+	grid-template-columns: 40% 1fr;
+	grid-template-rows: 30px 40% 1fr 25px;
 	grid-template-areas:
 		'image category'
 		'image title'
 		'description description'
 		'information information';
-	align-items: center;
+	align-items: start;
 	justify-items: center;
-	width: 320px;
+	min-width: 320px;
+	max-width: 440px;
+	width: 100%;
+	height: 210px;
+	margin: 0 10px;
 	margin-bottom: 20px;
 
 	background: #ffffff;
@@ -41,10 +46,10 @@ const Article = styled.article`
 
 const Image = styled.img`
 	grid-area: image;
-	width: 80px;
-	height: 80px;
-	margin-bottom: 12px;
-	margin-top: 10px;
+	max-height: 110px;
+	width: 100%;
+	padding-top: 5px;
+	padding-left: 5px;
 	border-radius: 10px;
 	object-fit: cover;
 `;

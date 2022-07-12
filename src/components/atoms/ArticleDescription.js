@@ -15,11 +15,10 @@ const ArticleDescription = ({ description, type }) => {
 
 const Description = styled.p`
 	grid-area: description;
-	font-size: 10px;
+	font-size: 12px;
 	width: 100%;
 	color: rgba(0, 0, 0, 0.6);
-	margin-bottom: 12px;
-	padding: 0 10px;
+	padding: 10px 10px 10px 10px;
 `;
 
 export default ArticleDescription;

@@ -19,7 +19,7 @@ const HomePage = () => {
 		const options = {
 			method: 'GET',
 			url: 'https://newscatcher.p.rapidapi.com/v1/search_free',
-			params: { q: 'Gaming', lang: 'pl', page_size: '25', media: 'True' },
+			params: { q: 'Wojna', lang: 'pl', page_size: '25', media: 'True' },
 			headers: {
 				'X-RapidAPI-Key': `${API_KEY}`,
 				'X-RapidAPI-Host': 'newscatcher.p.rapidapi.com',

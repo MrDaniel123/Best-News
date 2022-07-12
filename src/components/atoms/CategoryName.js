@@ -16,7 +16,8 @@ const CategoryWrap = styled.div`
 	align-items: center;
 	grid-area: category;
 	width: 100%;
-	margin-left: 10px;
+	margin-left: 20px;
+	margin-top: 10px;
 `;
 
 const Category = styled.div`
@@ -34,7 +35,7 @@ const Category = styled.div`
 `;
 
 const Name = styled.p`
-	font-size: 10px;
+	font-size: 12px;
 	color: #fff;
 `;
 

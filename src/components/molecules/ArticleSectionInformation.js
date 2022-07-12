@@ -2,15 +2,15 @@ import styled from 'styled-components';
 
 import arrow from '../../assets/Arrow.png';
 
-const ArticleSectionInformation = ({ time, editorialOffice }) => {
+const ArticleSectionInformation = ({ time, editorialOffice, mediaLink }) => {
 	return (
 		<InformationSection>
 			<ArticleInformation>{editorialOffice}</ArticleInformation>
 			<ArticleInformation>{time}</ArticleInformation>
 
-			<LinkBtn>
+			<Link href={mediaLink}>
 				<img src={arrow} alt='Reference' />
-			</LinkBtn>
+			</Link>
 		</InformationSection>
 	);
 };
@@ -26,12 +26,12 @@ const InformationSection = styled.div`
 `;
 
 const ArticleInformation = styled.p`
-	font-size: 8px;
+	font-size: 11px;
 	color: rgba(0, 0, 0, 0.4);
 `;
 
-const LinkBtn = styled.button`
-	border: none;
+const Link = styled.a`
+	text-decoration: none;
 	background-color: #fff;
 	cursor: pointer;
 `;
