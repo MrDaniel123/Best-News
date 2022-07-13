@@ -4,18 +4,18 @@ import CategoryName from '../atoms/CategoryName';
 import ArticleTitle from '../atoms/ArticleTitle';
 import ArticleSectionInformation from '../molecules/ArticleSectionInformation';
 import ArticleDescription from '../atoms/ArticleDescription';
-const ArticleMedium = props => {
+const ArticleMedium = ({ data, category }) => {
 	return (
 		<Article>
-			<Image src={props.data.media} alt='' />
-			<CategoryName categoryName={'Gaming'} />
-			<ArticleTitle description={props.data.title} bigFontSize={false} />
-			<ArticleDescription description={props.data.summary} type={'medium'} />
+			<Image src={data.media} alt='' />
+			<CategoryName categoryName={category} />
+			<ArticleTitle description={data.title} bigFontSize={false} />
+			<ArticleDescription description={data.summary} type={'medium'} />
 
 			<ArticleSectionInformation
-				time={props.data.published_date}
-				editorialOffice={props.data.rights}
-				mediaLink={props.data.link}
+				time={data.published_date}
+				editorialOffice={data.rights}
+				mediaLink={data.link}
 			/>
 		</Article>
 	);
@@ -46,7 +46,8 @@ const Article = styled.article`
 
 const Image = styled.img`
 	grid-area: image;
-	max-height: 110px;
+	max-height: 130px;
+	height: 100%;
 	width: 100%;
 	padding-top: 5px;
 	padding-left: 5px;

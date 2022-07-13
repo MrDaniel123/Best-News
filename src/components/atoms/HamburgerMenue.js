@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 import hamburgerMenueIcon from '../../assets/MenueBtn.png';
 
-const HamburgerMenue = props => {
+const HamburgerMenue = ({ showMenue }) => {
 	return (
-		<LogoBtn onClick={props.showMenue}>
+		<LogoBtn onClick={showMenue}>
 			<img src={hamburgerMenueIcon} alt='Show Menue' />
 		</LogoBtn>
 	);

@@ -5,14 +5,13 @@ import ArticleTitle from '../atoms/ArticleTitle';
 import ArticleSectionInformation from '../molecules/ArticleSectionInformation';
 import ArticleDescription from '../atoms/ArticleDescription';
 
-const ArticleBig = ({ dataArticle }) => {
+const ArticleBig = ({ dataArticle, category }) => {
 	const [data] = dataArticle;
-	console.log(data);
 
 	return (
 		<Article>
 			<Image src={data.media} alt='' />
-			<CategoryName categoryName={'Gaming'} />
+			<CategoryName categoryName={category} />
 			<ArticleTitle description={data.title} bigFontSize={true} />
 
 			<ArticleDescription description={data.summary} type={'big'} />

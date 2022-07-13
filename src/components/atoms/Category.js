@@ -1,8 +1,17 @@
 import styled from 'styled-components';
 
 const Category = props => {
+	const handleSetCategory = category => {
+		props.hiddenMenue();
+		props.categoryList.map(singleCategory => {
+			if (singleCategory === category) {
+				props.setCategory(category);
+			}
+		});
+	};
+
 	return (
-		<CategoryWrap>
+		<CategoryWrap onClick={() => handleSetCategory(props.children)}>
 			<Circle></Circle>
 			<ButtonCategogry>
 				{props.isChose ? (

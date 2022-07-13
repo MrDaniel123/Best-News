@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 import icon from '../../assets/CloseBtn.png';
 
-const CloseBtn = props => {
+const CloseBtn = ({ hiddenMenue }) => {
 	return (
-		<CloseButton onClick={props.hiddenMenue}>
+		<CloseButton onClick={hiddenMenue}>
 			<img src={icon} alt='' />
 		</CloseButton>
 	);

@@ -4,12 +4,12 @@ import Logo from '../atoms/Logo';
 import HamburgerMenue from '../atoms/HamburgerMenue';
 import Header from '../atoms/Header';
 
-const Navigation = props => {
+const Navigation = ({ showMenue }) => {
 	return (
 		<NavigationWrap>
 			<Logo />
 			<Header />
-			<HamburgerMenue showMenue={props.showMenue} />
+			<HamburgerMenue showMenue={showMenue} />
 		</NavigationWrap>
 	);
 };
