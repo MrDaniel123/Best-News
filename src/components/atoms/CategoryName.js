@@ -24,7 +24,7 @@ const Category = styled.div`
 	display: flex;
 	align-items: center;
 	padding: 1px 5px;
-	width: min-content;
+	width: max-content;
 
 	background: linear-gradient(
 		270deg,

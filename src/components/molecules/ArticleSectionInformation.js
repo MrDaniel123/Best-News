@@ -3,9 +3,11 @@ import styled from 'styled-components';
 import arrow from '../../assets/Arrow.png';
 
 const ArticleSectionInformation = ({ time, editorialOffice, mediaLink }) => {
+	const mediaEditor = editorialOffice.slice(0, 25);
+
 	return (
 		<InformationSection>
-			<ArticleInformation>{editorialOffice}</ArticleInformation>
+			<ArticleInformation>{mediaEditor}</ArticleInformation>
 			<ArticleInformation>{time}</ArticleInformation>
 
 			<Link href={mediaLink}>

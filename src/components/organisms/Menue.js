@@ -9,13 +9,13 @@ const Menue = ({ category, setCategory, hiddenMenue, isShow }) => {
 	const choseCategory = category;
 
 	const categoryList = [
-		'Polityka',
-		'Sport',
-		'Kryptowaluty',
-		'Gaming',
-		'Wojna',
-		'Technologia',
-		'Polska',
+		'Poland',
+		'War',
+		'Elon Musk',
+		'Technology',
+		'Apple',
+		'President',
+		'Italy',
 	];
 
 	const categoryComponents = categoryList.map(category => {

@@ -5,7 +5,7 @@ const Category = props => {
 		props.hiddenMenue();
 		props.categoryList.map(singleCategory => {
 			if (singleCategory === category) {
-				props.setCategory(category);
+				props.setCategory({ type: 'changeCategory', payload: category });
 			}
 		});
 	};
